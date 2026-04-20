@@ -1,0 +1,19 @@
+SAP ERP EXPORT - CONFIDENTIAL,,,,,,
+Report Generated: 2026-04-20 08:37:00,,,,,,
+User: SystemAdmin,,,,,,
+,,,,,,
+Invoice_ID,Site_Name,Billing_Date,Energy_Consumption,Tariff_Type,Total_Amount,Status
+INV-1001,Uberlândia-MG,15/04/2026,45000,Industrial,"R$ 12.500,00",Paid
+INV-1002,uberlandia-mg,04-15-2026,45500 kWh,industrial,"R$ 12.750,50",Paid
+,,,,,,
+INV-1003,São Paulo-SP,2026/04/16,N/A,Comercial,15000.00,Pending
+INV-1001,Uberlândia-MG,15/04/2026,45000,Industrial,"R$ 12.500,00",Paid
+INV-1004,  Belo Horizonte-MG  ,12/04/2026,38000.5,Industrial,"10,200.00",Paid
+INV-1005,Rio Verde-GO,10/04/2026,NaN,Agro,"R$ 8.900,00",OVERDUE
+INV-1006,Uberlândia-MG,20-04-2026,42000,Ind.,"R$ 11.200,00",Paid 
+INV-1007,São Paulo-SP,18/04/2026,12000,comercial,"R$ 4.500,00",Pending
+INV-1008,Camaçari-BA,05/04/26,55000,Industrial,"18.500,00 BRL",Paid
+INV-1009,RIO VERDE-go,04/10/2026,22000,Agro,"R$ 6.200,00",Paid
+INV-1010,uberlândia-MG,,41000,Industrial,,Pending
+INV-1011,Campo Novo-MT,19/04/2026,18500,Agro,"R$ 5.100,00",Paid
+INV-1012,Uberlandia-MG,21/04/2026,43200,INDUSTRIAL,"R$ 11.800,00",Processing

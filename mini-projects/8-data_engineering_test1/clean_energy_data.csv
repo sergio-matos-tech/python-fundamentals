@@ -1,0 +1,13 @@
+Invoice_ID,Site_Name,Billing_Date,Energy_Consumption,Tariff_Type,Total_Amount,Status,Estado,Regiao
+INV-1008,Camacari-Ba,2026-04-05,55000.0,Industrial,18500.0,Paid,BA,Nordeste
+INV-1005,Rio Verde-Go,2026-04-10,,Agro,8900.0,Overdue,GO,Centro-Oeste
+INV-1004,Belo Horizonte-Mg,2026-04-12,38000.5,Industrial,10200.0,Paid,MG,Sudeste
+INV-1001,Uberlandia-Mg,2026-04-15,45000.0,Industrial,12500.0,Paid,MG,Sudeste
+INV-1002,Uberlandia-Mg,2026-04-15,45500.0,Industrial,12750.5,Paid,MG,Sudeste
+INV-1003,Sao Paulo-Sp,2026-04-16,,Commercial,15000.0,Pending,SP,Sudeste
+INV-1007,Sao Paulo-Sp,2026-04-18,12000.0,Commercial,4500.0,Pending,SP,Sudeste
+INV-1011,Campo Novo-Mt,2026-04-19,18500.0,Agro,5100.0,Paid,MT,Centro-Oeste
+INV-1006,Uberlandia-Mg,2026-04-20,42000.0,Industrial,11200.0,Paid,MG,Sudeste
+INV-1012,Uberlandia-Mg,2026-04-21,43200.0,Industrial,11800.0,Processing,MG,Sudeste
+INV-1009,Rio Verde-Go,2026-10-04,22000.0,Agro,6200.0,Paid,GO,Centro-Oeste
+INV-1010,Uberlandia-Mg,,41000.0,Industrial,,Pending,MG,Sudeste
