@@ -1,0 +1,93 @@
+# Python Virtual Environment Activation Guide
+
+## 1. Create a Virtual Environment
+
+If you haven’t created one yet:
+
+```bash
+python -m venv venv
+```
+
+This creates a folder named `venv/` in your project.
+
+---
+
+## 2. Activate the Virtual Environment
+
+### Windows (PowerShell)
+
+```powershell
+venv\Scripts\Activate.ps1
+```
+
+If you get an execution policy error:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
+Then run the activation command again.
+
+---
+
+### Windows (Command Prompt - CMD)
+
+```cmd
+venv\Scripts\activate.bat
+```
+
+---
+
+### Linux / macOS (bash / zsh)
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+## 3. Confirm Activation
+
+Your terminal prompt should change, typically showing:
+
+```
+(venv) your-user@machine:~
+```
+
+---
+
+## 4. Deactivate the Environment
+
+When you are done:
+
+```bash
+deactivate
+```
+
+---
+
+## Practical Notes
+
+* Activation is required for each new terminal session.
+* Do not commit the `venv/` folder to version control. Add it to `.gitignore`.
+* IDEs like VS Code can auto-detect and activate virtual environments when you select the Python interpreter.
+
+---
+
+## Common Issues
+
+### PowerShell Script Execution Disabled
+
+If you see an error like:
+
+```
+cannot be loaded because running scripts is disabled on this system
+```
+
+Run:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
+This change is temporary and only affects the current terminal session.
