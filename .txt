@@ -1,93 +1,158 @@
-# Python Virtual Environment Activation Guide
+# Python Virtual Environment Guide
 
-## 1. Create a Virtual Environment
+Use the project virtual environment whenever you run Python files from this
+`python-fundamentals` folder.
 
-If you haven’t created one yet:
+This project is using:
 
-```bash
-python -m venv venv
+```text
+.venv
 ```
 
-This creates a folder named `venv/` in your project.
+VS Code is also configured to use:
+
+```text
+${workspaceFolder}\.venv\Scripts\python.exe
+```
 
 ---
 
-## 2. Activate the Virtual Environment
+## 1. Activate The Virtual Environment
 
-### Windows (PowerShell)
+Open a terminal in the project folder:
 
 ```powershell
-venv\Scripts\Activate.ps1
+cd C:\Users\sergi\Documents\Dev\python-fundamentals
 ```
 
-If you get an execution policy error:
+Then activate `.venv`:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+After activation, your prompt should usually show something like:
+
+```text
+(.venv)
+```
+
+---
+
+## 2. If PowerShell Blocks Activation
+
+If you see an error saying scripts are disabled, run this once in the same
+terminal:
 
 ```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ```
 
-Then run the activation command again.
+Then activate again:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+This change is temporary and only affects the current terminal session.
 
 ---
 
-### Windows (Command Prompt - CMD)
+## 3. Run Python Files
 
-```cmd
-venv\Scripts\activate.bat
+After `.venv` is active, run files normally with `python`.
+
+Example:
+
+```powershell
+python tests\16-open_cv\test02.py
+```
+
+Another example:
+
+```powershell
+python tests\some_folder\some_file.py
+```
+
+Because the virtual environment is active, `python` will use the packages
+installed inside `.venv`, such as `numpy`, `opencv-python`, `pytest`, and
+`requests`.
+
+---
+
+## 4. Run Without Activating
+
+You can also run a file directly with the `.venv` Python executable:
+
+```powershell
+.\.venv\Scripts\python.exe tests\16-open_cv\test02.py
+```
+
+This is useful if you are unsure whether the terminal is currently using the
+right environment.
+
+---
+
+## 5. Check Which Python Is Being Used
+
+Run:
+
+```powershell
+python -c "import sys; print(sys.executable)"
+```
+
+If the environment is correct, it should print something like:
+
+```text
+C:\Users\sergi\Documents\Dev\python-fundamentals\.venv\Scripts\python.exe
+```
+
+You can also check installed packages:
+
+```powershell
+pip list
 ```
 
 ---
 
-### Linux / macOS (bash / zsh)
+## 6. Install Project Requirements
 
-```bash
-source venv/bin/activate
+If you recreate the environment or clone the project somewhere else:
+
+```powershell
+python -m pip install -r requirements.txt
+```
+
+For this project, OpenCV is installed through the package named:
+
+```text
+opencv-python
+```
+
+But in code you import it as:
+
+```python
+import cv2
 ```
 
 ---
 
-## 3. Confirm Activation
+## 7. Deactivate When Done
 
-Your terminal prompt should change, typically showing:
+When you are done working:
 
-```
-(venv) your-user@machine:~
-```
-
----
-
-## 4. Deactivate the Environment
-
-When you are done:
-
-```bash
+```powershell
 deactivate
 ```
 
 ---
 
-## Practical Notes
-
-* Activation is required for each new terminal session.
-* Do not commit the `venv/` folder to version control. Add it to `.gitignore`.
-* IDEs like VS Code can auto-detect and activate virtual environments when you select the Python interpreter.
-
----
-
-## Common Issues
-
-### PowerShell Script Execution Disabled
-
-If you see an error like:
-
-```
-cannot be loaded because running scripts is disabled on this system
-```
-
-Run:
+## Quick Daily Workflow
 
 ```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+cd C:\Users\sergi\Documents\Dev\python-fundamentals
+.\.venv\Scripts\Activate.ps1
+python tests\16-open_cv\test02.py
 ```
 
-This change is temporary and only affects the current terminal session.
+If you open a new terminal, activate `.venv` again.
