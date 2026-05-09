@@ -11,7 +11,7 @@ This repository is based on a mix of practical exercises and lessons from the fo
 - [The Modern Python 3 Bootcamp - Colt Steele](https://www.udemy.com/course/the-modern-python3-bootcamp/)
 - [100 Days of Code: The Complete Python Pro Bootcamp - Dr. Angela Yu](https://www.udemy.com/course/100-days-of-code/)
 - [Fundamentos de Linguagem Python - Do Básico a Aplicações de IA](https://www.datascienceacademy.com.br/course/fundamentos-de-linguagem-python-do-basico-a-aplicacoes-de-ia)
-- [Digital Image Processing (part of my academic CS course)](https://facom.ufu.br/pessoas/docentes/bruno-augusto-nassif-travencolo)
+- [Digital Image Processing (part of my academic CS course) with Professor Bruno Augusto Nassif Travençolo](https://facom.ufu.br/pessoas/docentes/bruno-augusto-nassif-travencolo)
 - Python official documentation: [docs.python.org](https://docs.python.org/3/)
 
 ## 🚀 About
