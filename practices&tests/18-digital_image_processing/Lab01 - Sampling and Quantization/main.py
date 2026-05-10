@@ -21,6 +21,7 @@ print(f"DPI original de relogio: {pil_img.info['dpi']}")
 
 dpi_original = pil_img.info["dpi"][0]
 largura_original, altura_original = pil_img.size
+print(pil_img.size)
 
 # Convertendo a resolucao e o metadado de DPI para 300, 150 e 72 DPI
 for dpi in [300, 150, 72]:
