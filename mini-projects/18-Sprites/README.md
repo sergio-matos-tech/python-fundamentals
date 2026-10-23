@@ -1,9 +1,4 @@
 # Sprites 2D com GLFW + OpenGL 3.3 Core
-
-**UFU - FACOM - Computação Gráfica**
-**Discente:** Sergio Henrique Ribeiro Matos
-**Matrícula:** 12211bcc038
-
 Atividade prática complementar à Atividade 2 (*A Técnica de Sprites na Computação Gráfica 2D: História, Pipeline de GPU e Ferramentas*). O projeto renderiza um personagem animado sobre um cenário em tilemap, usando apenas um Texture Atlas gerado proceduralmente (nenhuma imagem externa é necessária).
 
 ## Instalação e execução
